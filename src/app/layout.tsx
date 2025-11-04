@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Header from "@/components/Header";
 import { FooterSection } from "@/components/Footer";
@@ -50,8 +49,7 @@ export default function RootLayout({
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
         {children}
-        <FooterSection />
-        <VisualEditsMessenger />
+  <FooterSection />
       </body>
     </html>
   );
